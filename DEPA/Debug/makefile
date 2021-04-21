@@ -8,12 +8,13 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include src/Nodes/xor/subdir.mk
--include src/Nodes/or/subdir.mk
--include src/Nodes/not/subdir.mk
--include src/Nodes/nor/subdir.mk
--include src/Nodes/nand/subdir.mk
--include src/Nodes/and/subdir.mk
+-include src/Nodes/Xor/subdir.mk
+-include src/Nodes/Or/subdir.mk
+-include src/Nodes/Not/subdir.mk
+-include src/Nodes/Nor/subdir.mk
+-include src/Nodes/Nand/subdir.mk
+-include src/Nodes/And/subdir.mk
+-include src/Node/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
 -include objects.mk

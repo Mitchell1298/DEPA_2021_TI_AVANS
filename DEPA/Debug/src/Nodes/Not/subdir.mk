@@ -4,17 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/Nodes/and/And.cpp 
+../src/Nodes/Not/Not.cpp 
 
 OBJS += \
-./src/Nodes/and/And.o 
+./src/Nodes/Not/Not.o 
 
 CPP_DEPS += \
-./src/Nodes/and/And.d 
+./src/Nodes/Not/Not.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
-src/Nodes/and/%.o: ../src/Nodes/and/%.cpp src/Nodes/and/subdir.mk
+src/Nodes/Not/%.o: ../src/Nodes/Not/%.cpp src/Nodes/Not/subdir.mk
 	@echo 'Building file: $<'
 	@echo 'Invoking: Cross G++ Compiler'
 	g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -o "$@" "$<"

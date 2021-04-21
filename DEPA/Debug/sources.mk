@@ -23,11 +23,12 @@ CPP_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-src/Nodes/and \
-src/Nodes/nand \
-src/Nodes/nor \
-src/Nodes/not \
-src/Nodes/or \
-src/Nodes/xor \
+src/Node \
+src/Nodes/And \
+src/Nodes/Nand \
+src/Nodes/Nor \
+src/Nodes/Not \
+src/Nodes/Or \
+src/Nodes/Xor \
 src \
 
