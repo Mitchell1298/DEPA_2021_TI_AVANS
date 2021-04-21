@@ -16,7 +16,14 @@ Not::~Not() {
 	// TODO Auto-generated destructor stub
 }
 
-bool Not::calculate(bool input0, bool input1){
+bool Not::calculate(bool input0){
 
-	return false;
+	if (input0)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
 }

@@ -19,5 +19,18 @@ Xor::~Xor() {
 
 bool Xor::calculate(bool input0, bool input1){
 
-	return false;
+	if (input0&& input1 == false)
+	{
+		return true;
+	}
+
+	else if (input0 == false && input1)
+	{
+		return true;
+	}
+
+	else
+	{
+		return false;
+	}
 }

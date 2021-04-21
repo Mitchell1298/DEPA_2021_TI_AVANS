@@ -13,7 +13,7 @@ public:
 	Not();
 	virtual ~Not();
 
-	bool calculate(bool, bool);
+	bool calculate(bool);
 };
 
 #endif /* SRC_NODES_NOT_NOT_H_ */

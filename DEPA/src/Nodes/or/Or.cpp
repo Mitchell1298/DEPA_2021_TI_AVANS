@@ -18,5 +18,12 @@ Or::~Or() {
 
 bool Or::calculate(bool input0, bool input1){
 
-	return false;
+	if (input0 || input1)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }

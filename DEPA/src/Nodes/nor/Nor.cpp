@@ -18,5 +18,12 @@ Nor::~Nor() {
 
 bool Nor::calculate(bool input0, bool input1){
 
-	return false;
+	if (input0 == false && input1 == false)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
 }

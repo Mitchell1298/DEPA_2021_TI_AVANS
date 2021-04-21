@@ -18,5 +18,13 @@ Nand::~Nand() {
 
 bool Nand::calculate(bool input0, bool input1){
 
-	return false;
+	if (input0 && input1)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+
 }
