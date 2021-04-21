@@ -2,6 +2,9 @@
 
 Node::Node()
 {
+	this->inputA = new NodeLink();
+	this->inputB = new NodeLink();
+	this->output = new NodeLink();
 }
 
 void Node::Operation()

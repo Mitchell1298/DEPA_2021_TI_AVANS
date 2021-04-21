@@ -9,13 +9,7 @@ int main()
     std::cout << "Hello World!\n";
     //Initialize
     Node* nodeAnd = new Node();
-    nodeAnd->inputA = new NodeLink();
-    nodeAnd->inputB = new NodeLink();
-    nodeAnd->output = new NodeLink();
     Node * nodeAnd2 = new Node();
-    nodeAnd2->inputA = new NodeLink();
-    nodeAnd2->inputB = new NodeLink();
-    nodeAnd2->output = new NodeLink();
     
     nodeAnd->inputA->value = 1;
     nodeAnd->inputB->value = 1;
@@ -25,6 +19,15 @@ int main()
     nodeAnd2->Operation();
     std::cout << "AND2 output = " << nodeAnd2->output->value << std::endl;
 }
+
+//Circuit:
+//  A-+---+  C
+//    | &1|--+
+//  B-+---+  | A
+//           +--+---+
+//              | &2|--C
+//          B---+---+
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
