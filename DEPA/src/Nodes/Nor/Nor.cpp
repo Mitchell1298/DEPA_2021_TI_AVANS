@@ -5,7 +5,7 @@
  *      Author: root
  */
 
-#include "Nor.h"
+#include "../Nor/Nor.h"
 
 Nor::Nor() {
 	// TODO Auto-generated constructor stub

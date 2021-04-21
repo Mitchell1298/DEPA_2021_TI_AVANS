@@ -1,34 +1,27 @@
 /*
- * Xor.cpp
+ * And.cpp
  *
  *  Created on: Apr 21, 2021
  *      Author: root
  */
 
-#include "Xor.h"
+#include "../And/And.h"
 
-Xor::Xor() {
+And::And() {
 	// TODO Auto-generated constructor stub
 
 }
 
-Xor::~Xor() {
+And::~And() {
 	// TODO Auto-generated destructor stub
 }
 
+bool And::calculate(bool input0, bool input1){
 
-bool Xor::calculate(bool input0, bool input1){
-
-	if (input0&& input1 == false)
+	if (input0 && input1)
 	{
 		return true;
 	}
-
-	else if (input0 == false && input1)
-	{
-		return true;
-	}
-
 	else
 	{
 		return false;

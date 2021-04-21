@@ -1,24 +1,24 @@
 /*
- * Nand.cpp
+ * Not.cpp
  *
  *  Created on: Apr 21, 2021
  *      Author: root
  */
 
-#include "Nand.h"
+#include "../Not/Not.h"
 
-Nand::Nand() {
+Not::Not() {
 	// TODO Auto-generated constructor stub
 
 }
 
-Nand::~Nand() {
+Not::~Not() {
 	// TODO Auto-generated destructor stub
 }
 
-bool Nand::calculate(bool input0, bool input1){
+bool Not::calculate(bool input0){
 
-	if (input0 && input1)
+	if (input0)
 	{
 		return false;
 	}
@@ -26,5 +26,4 @@ bool Nand::calculate(bool input0, bool input1){
 	{
 		return true;
 	}
-
 }
