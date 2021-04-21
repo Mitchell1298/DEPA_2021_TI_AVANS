@@ -22,7 +22,7 @@ public:
 
 	int ID;
 
-	;NodeType;
+//	NodeType;
 
 	bool input0;
 	bool input1;

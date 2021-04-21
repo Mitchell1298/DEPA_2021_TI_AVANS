@@ -9,7 +9,14 @@
 
 Node::Node() {
 	// TODO Auto-generated constructor stub
+	ID = 0;
 
+//	NodeType =
+
+	input0 = false;
+	input1 = false;
+
+	output = false;
 }
 
 Node::~Node() {
