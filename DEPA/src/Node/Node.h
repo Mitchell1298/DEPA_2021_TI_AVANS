@@ -20,15 +20,21 @@ public:
 	Node();
 	virtual ~Node();
 
+	Node(int,int);
+
 	int ID;
 
 //	NodeType;
+
+	And andOperator;
+
 
 	bool input0;
 	bool input1;
 
 	bool output;
 
+	void setInputs();
 	void calculate();
 };
 

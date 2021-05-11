@@ -23,9 +23,13 @@ Node::~Node() {
 	// TODO Auto-generated destructor stub
 }
 
+Node::Node(int ID, int type){
+    this->ID = ID;
+
+}
+
 
 void Node::calculate(){
-
 //	output = type->calculate(input0, input1);
 
 }
