@@ -13,7 +13,7 @@ public:
 	NodeLink* inputA;
 	NodeLink* inputB;
 	NodeLink* output;
-	void Operation();
+	virtual void Operation() = 0;
 private:
 	/*NodeLink* inputA;
 	NodeLink* inputB;

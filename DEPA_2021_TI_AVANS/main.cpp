@@ -3,21 +3,23 @@
 
 #include <iostream>
 #include "Node.h"
+#include "And.h"
+#include "Or.h"
 
 int main()
 {
     std::cout << "Hello World!\n";
     //Initialize
-    Node* nodeAnd = new Node();
-    Node * nodeAnd2 = new Node();
+    Node* nodeOr = new Or();
+    Node* nodeAnd = new And();
     
-    nodeAnd->inputA->value = 1;
+    nodeOr->inputA->value = 0;
+    nodeOr->inputB->value = 0;
+    nodeOr->output = nodeAnd->inputA;
     nodeAnd->inputB->value = 1;
-    nodeAnd->output = nodeAnd2->inputA;
-    nodeAnd2->inputB->value = 1;
+    nodeOr->Operation();
     nodeAnd->Operation();
-    nodeAnd2->Operation();
-    std::cout << "AND2 output = " << nodeAnd2->output->value << std::endl;
+    std::cout << "AND2 output = " << nodeAnd->output->value << std::endl;
 }
 
 //Circuit:
