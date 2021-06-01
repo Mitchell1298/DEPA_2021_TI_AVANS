@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="And.cpp" />
+    <ClCompile Include="LogicGateVisitor.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="NodeLink.cpp" />
@@ -147,9 +148,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="And.h" />
+    <ClInclude Include="LogicGateVisitor.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="NodeLink.h" />
     <ClInclude Include="Or.h" />
+    <ClInclude Include="Visitor.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

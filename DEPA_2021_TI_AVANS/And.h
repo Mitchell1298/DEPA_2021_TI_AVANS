@@ -4,6 +4,5 @@ class And :
     public Node
 {
 public:
-    void Operation();
+    void    accept(Visitor&)    override;
 };
-

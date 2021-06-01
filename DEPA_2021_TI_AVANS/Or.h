@@ -4,6 +4,5 @@ class Or :
     public Node
 {
 public:
-    void Operation();
+    void    accept(Visitor&)    override;
 };
-

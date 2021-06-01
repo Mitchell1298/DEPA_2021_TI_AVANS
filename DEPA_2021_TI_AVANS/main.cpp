@@ -5,20 +5,26 @@
 #include "Node.h"
 #include "And.h"
 #include "Or.h"
+#include "LogicGateVisitor.h"
 
 int main()
 {
     std::cout << "Hello World!\n";
+
     //Initialize
-    Node* nodeOr = new Or();
-    Node* nodeAnd = new And();
+    LogicGateVisitor* pVisitor = new LogicGateVisitor;
+    Or* nodeOr = new Or();
+    And* nodeAnd = new And();
     
     nodeOr->inputA->value = 0;
     nodeOr->inputB->value = 0;
     nodeOr->output = nodeAnd->inputA;
     nodeAnd->inputB->value = 1;
-    nodeOr->Operation();
-    nodeAnd->Operation();
+    /*nodeOr->Operation();
+    nodeAnd->Operation();*/
+    nodeOr->accept(*pVisitor);
+    nodeAnd->accept(*pVisitor);
+
     std::cout << "AND2 output = " << nodeAnd->output->value << std::endl;
 }
 
